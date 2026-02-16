@@ -16,35 +16,34 @@
 ### Шаг 1:
 Распокавать архив в удобной для работы директории
 ### Шаг 2:
-Создание окружения. Для создания окружения нужно прописать в терминал команды:
-Windows:
-
+### 2. Активируйте venv
+**Windows (PowerShell):**
+```powershell
 python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
 
-
-
+**Windows (CMD):**
+```cmd
+python -m venv venv
 venv\Scripts\activate
+```
 
-macOS / Linux:
-
+**Linux/Mac:**
+```bash
 python3 -m venv venv
-
-
 source venv/bin/activate
+```
 
-### Шаг 3:
-Установка зависимостей:
-
+### 3. Установите зависимости
+```bash
 pip install -r requirements.txt
+```
 
-### Шаг 4: 
-Запустите веб-сервер Flask командой:
+## Запуск
 
+```bash
 python app.py
-### Шаг 5: 
-Доступ к приложению
-Откройте браузер и перейдите по адресу:
+```
 
-http://127.0.0.1:5000
-
-### списки абитуриентов хранятся в папке "абитуриенты"
+Сайт будет доступен по адресу: `http://localhost:5000`
